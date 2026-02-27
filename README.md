@@ -43,7 +43,18 @@ Determine the most efficient method to determine sentiment by comparing the accu
 
 
 <br /> Most Effective Workflow: Decision Tree Machine Learning (training model)
-- KNIME’s Tag Filter node was used to identify and label relevant parts-of-speech associated with emotion (e.g. adjectives, nouns, and verbs) to aid machine learning in identifying positive and negative sentiment ([University of Pennsylvania, 2003](https://nocookie.tools/?url=https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html); [KNIME, n.d.](https://hub.knime.com/knime/extensions/org.knime.features.ext.textprocessing/latest/org.knime.ext.textprocessing.nodes.preprocessing.tagfilter2.TagFilterNodeFactory2)).  
+- KNIME’s Tag Filter node was used to identify and label relevant parts-of-speech associated with emotion (e.g. adjectives, nouns, and verbs) to aid machine learning in identifying positive and negative sentiment (
+<a href="https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html"
+   target="_blank"
+   rel="noopener noreferrer">
+   University of Pennsylvania, 2003
+</a>; 
+<a href="https://hub.knime.com/knime/extensions/org.knime.features.ext.textprocessing/latest/org.knime.ext.textprocessing.nodes.preprocessing.tagfilter2.TagFilterNodeFactory2"
+   target="_blank"
+   rel="noopener noreferrer">
+   KNIME, n.d.
+</a>
+    ).  
 - When configuring the Decision Tree Learner, the Gini Index was chosen as the quality measure, showing advantages for faster computation over Gain Ratio as it operates on the categorical target variables in terms of 'success' or 'failure' ([Analytics Steps, 2021](https://medium.com/analytics-steps/understanding-the-gini-index-and-information-gain-in-decision-trees-ab4720518ba8)).  
 - The tree was not pruned, and ‘Reduced Error Pruning” was enabled along with capping the number of records per node at 2, to improve training accuracy while preserving learning efficiency.
 
