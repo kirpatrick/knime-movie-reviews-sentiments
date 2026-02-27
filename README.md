@@ -43,7 +43,7 @@ Determine the most efficient method to determine sentiment by comparing the accu
 
 
 <br /> Most Effective Workflow: Decision Tree Machine Learning (training model)
-- KNIME’s Tag Filter node was used to identify and label relevant parts-of-speech associated with emotion (e.g. adjectives, nouns, and verbs) to aid machine learning in identifying positive and negative sentiment ([University of Pennsylvania, 2003](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html); [KNIME, n.d.](https://hub.knime.com/knime/extensions/org.knime.features.ext.textprocessing/latest/org.knime.ext.textprocessing.nodes.preprocessing.tagfilter2.TagFilterNodeFactory2)).  
+- KNIME’s Tag Filter node was used to identify and label relevant parts-of-speech associated with emotion (e.g. adjectives, nouns, and verbs) to aid machine learning in identifying positive and negative sentiment ([University of Pennsylvania, 2003](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html); [KNIME, n.d.](https://hub.knime.com/knime/extensions/org.knime.features.ext.textprocessing/latest/org.knime.ext.textprocessing.nodes.preprocessing.tagfilter2.TagFilterNodeFactory2)). *NOTE: Copy the entire web link to U. Penn. from the 'Resources' section if you encounter an error.*
 - When configuring the Decision Tree Learner, the Gini Index was chosen as the quality measure, showing advantages for faster computation over Gain Ratio as it operates on the categorical target variables in terms of 'success' or 'failure' ([Analytics Steps, 2021](https://medium.com/analytics-steps/understanding-the-gini-index-and-information-gain-in-decision-trees-ab4720518ba8)).  
 - The tree was not pruned, and ‘Reduced Error Pruning” was enabled along with capping the number of records per node at 2, to improve training accuracy while preserving learning efficiency.
 
@@ -68,12 +68,12 @@ KNIME Extensions:
 
 ## References
 
-Analytics Steps. (2021, June 15). Understanding the Gini index and information gain in decision trees. Medium. Retrieved November 25, 2025, from https://medium.com/analytics-steps/understanding-the-gini-index-and-information-gain-in-decision-trees-ab4720518ba8. 
+Analytics Steps. (2021, June 15). Understanding the Gini index and information gain in decision trees. Medium. Retrieved November 25, 2025, from https://medium.com/analytics-steps/understanding-the-gini-index-and-information-gain-in-decision-trees-ab4720518ba8
 
-KNIME. (2020, February 24). Cohen’s kappa: An overview. KNIME Blog. https://www.knime.com/blog/cohens-kappa-an-overview?pk_vid=ae0debe8dfb2ebfe1764604577aca348. 
+KNIME. (2020, February 24). Cohen’s kappa: An overview. KNIME Blog. https://www.knime.com/blog/cohens-kappa-an-overview?pk_vid=ae0debe8dfb2ebfe1764604577aca348
 
-KNIME. (n.d.). Tag Filter node documentation. KNIME Hub. Retrieved December 2, 2025, from https://hub.knime.com/knime/extensions/org.knime.features.ext.textprocessing/latest/org.knime.ext.textprocessing.nodes.preprocessing.tagfilter2.TagFilterNodeFactory2.
+KNIME. (n.d.). Tag Filter node documentation. KNIME Hub. Retrieved December 2, 2025, from https://hub.knime.com/knime/extensions/org.knime.features.ext.textprocessing/latest/org.knime.ext.textprocessing.nodes.preprocessing.tagfilter2.TagFilterNodeFactory2
 
-New Stack. (2022, September 15). Cohen’s kappa: What it is, when to use it, and how to avoid its pitfalls. The New Stack. https://thenewstack.io/cohens-kappa-what-it-is-when-to-use-it-and-how-to-avoid-its-pitfalls/. 
+New Stack. (2022, September 15). Cohen’s kappa: What it is, when to use it, and how to avoid its pitfalls. The New Stack. https://thenewstack.io/cohens-kappa-what-it-is-when-to-use-it-and-how-to-avoid-its-pitfalls/
 
-University of Pennsylvania. (2003). Part-of-Speech (POS) tagging using the Penn Treebank tag set. Department of Linguistics, University of Pennsylvania. Retrieved December 2, 2025, from https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html.
+University of Pennsylvania. (2003). Part-of-Speech (POS) tagging using the Penn Treebank tag set. Department of Linguistics, University of Pennsylvania. Retrieved December 2, 2025, from https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
