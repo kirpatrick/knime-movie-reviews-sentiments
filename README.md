@@ -35,8 +35,11 @@ Determine the most efficient method to determine sentiment by comparing the accu
 
 ## Solution
 1. Install the KNIME platform and Extensions according to the specifications listed below in the Tech Stack.
-2. Download [KNIME-Workflow-MovieSentimentAnalysis.knwf](https://drive.google.com/file/d/1quOqaI6Lb8T1lI-uGOzJSaZ--cVnv3DB/view?usp=drive_link) file.
-3. Download the data (.csv) files as needed to execute different branches of the workflow. <br />NOTE: The Generative AI workflow requires a OpenAI subscription.
+2. Download the data (.csv) files as needed to execute different branches of the workflow. <br />NOTE: The Generative AI workflow requires a OpenAI subscription.
+3. Download [KNIME-Workflow-MovieSentimentAnalysis.knwf](https://drive.google.com/file/d/1quOqaI6Lb8T1lI-uGOzJSaZ--cVnv3DB/view?usp=drive_link) file.
+<a href="https://drive.google.com/file/d/1quOqaI6Lb8T1lI-uGOzJSaZ--cVnv3DB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="image-link">
+  <img src="images//KNIME-ML-Sentiment-Analysis.png" alt="Sentiment Analysis" class="responsive-image">
+  </a>
 
 Most Effective Workflow: Decision Tree Machine Learning (training model)
 - KNIME’s Tag Filter node was used to identify and label relevant parts-of-speech associated with emotion (e.g. adjectives, nouns, and verbs) to aid machine learning in identifying positive and negative sentiment ([University of Pennsylvania, 2003](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html); [KNIME, n.d.](https://hub.knime.com/knime/extensions/org.knime.features.ext.textprocessing/latest/org.knime.ext.textprocessing.nodes.preprocessing.tagfilter2.TagFilterNodeFactory2)).  
@@ -45,6 +48,8 @@ Most Effective Workflow: Decision Tree Machine Learning (training model)
 
 We observed a higher Cohen’s kappa value (0.925) for this approach.  This measure solidifies our confidence in this improved model where the target classes (positive and negative sentiments) are balanced within the dataset and high values are expected for strong models ([KNIME, 2020](https://www.knime.com/blog/cohens-kappa-an-overview?pk_vid=ae0debe8dfb2ebfe1764604577aca348); [New Stack, 2022](https://thenewstack.io/cohens-kappa-what-it-is-when-to-use-it-and-how-to-avoid-its-pitfalls/)). 
 
+<br />
+ <img src="images//KNIME-ML-Sentiment-Analysis.png" alt="Sentiment Analysis">
 
 ## Tech Stack
 System Specifications:
@@ -62,4 +67,3 @@ KNIME Extensions:
 - KNIME Javasnippet Nodes
 <br />- Rules Engine
 
- <img src="images//KNIME-ML-Sentiment-Analysis.png" alt="Sentiment Analysis">
