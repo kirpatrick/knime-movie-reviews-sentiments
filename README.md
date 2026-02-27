@@ -16,7 +16,8 @@ Determine the most efficient method to determine sentiment by comparing the accu
 <strong>IMDB-sample.csv</strong>
 <br />Description: Movie Reviews from the Internet Movie Database
 <!-- <br />Source: [KNIME Public - Education data](https://hub.knime.com/knime/spaces/Education/Courses/L4-TP%20Text%20Processing%20-%20Specialization/data) -->
-<br />Source: <a href="https://hub.knime.com/knime/spaces/Education/Courses/L4-TP%20Text%20Processing%20-%20Specialization/data" target="_blank" rel="noopener noreferrer">KNIME Public - Education data</a>
+Source: 
+<a href="https://hub.knime.com/knime/spaces/Education/Courses/L4-TP%20Text%20Processing%20-%20Specialization/data" target="_blank" rel="noopener noreferrer">KNIME Public - Education data</a>
 <br />Row Count: 2000 +header 
 <br />Four Columns:
 - Index (Unique Identifier)
@@ -38,9 +39,10 @@ Determine the most efficient method to determine sentiment by comparing the accu
 1. Install the KNIME platform and Extensions according to the specifications listed below in the Tech Stack.
 2. Download the data (.csv) files as needed to execute different branches of the workflow. <br />NOTE: The Generative AI workflow requires a OpenAI subscription.
 3. Download [KNIME-Workflow-MovieSentimentAnalysis.knwf](https://drive.google.com/uc?export=download&id=1quOqaI6Lb8T1lI-uGOzJSaZ--cVnv3DB) file.
+
 <a href="https://drive.google.com/uc?export=download&id=1quOqaI6Lb8T1lI-uGOzJSaZ--cVnv3DB" target="_blank" rel="noopener noreferrer">
-  <img src="images//KNIME-ML-Sentiment-Analysis.png" alt="Sentiment Analysis">
-  </a>
+    <img src="images//KNIME-ML-Sentiment-Analysis.png">
+</a>
 
 Most Effective Workflow: Decision Tree Machine Learning (training model)
 - KNIME’s Tag Filter node was used to identify and label relevant parts-of-speech associated with emotion (e.g. adjectives, nouns, and verbs) to aid machine learning in identifying positive and negative sentiment ([University of Pennsylvania, 2003](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html); [KNIME, n.d.](https://hub.knime.com/knime/extensions/org.knime.features.ext.textprocessing/latest/org.knime.ext.textprocessing.nodes.preprocessing.tagfilter2.TagFilterNodeFactory2)).  
@@ -68,3 +70,4 @@ KNIME Extensions:
 - KNIME Javasnippet Nodes
 <br />- Rules Engine
 
+<a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub in new tab</a>
