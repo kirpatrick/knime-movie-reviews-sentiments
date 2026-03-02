@@ -35,7 +35,7 @@ Determine the most efficient method to determine sentiment by comparing the accu
 
 ## Solution
 1. Install the KNIME platform and Extensions according to the specifications listed below in the Tech Stack.
-2. Download the data (.csv) files as needed to execute different branches of the workflow. <br />NOTE: The Generative AI workflow requires a OpenAI subscription.
+2. Download the data (.csv) files as needed to execute different branches of the workflow. <br />NOTE: The Generative AI workflow requires an OpenAI subscription.
 3. Download the [KNIME-Workflow-MovieSentimentAnalysis.knwf](https://drive.google.com/uc?export=download&id=1quOqaI6Lb8T1lI-uGOzJSaZ--cVnv3DB) solution workflow (~64MB).
 <a href="https://drive.google.com/uc?export=download&id=1quOqaI6Lb8T1lI-uGOzJSaZ--cVnv3DB">
   <img src="images//KNIME-ML-Sentiment-Analysis.png" alt="Sentiment Analysis">
@@ -47,8 +47,11 @@ Determine the most efficient method to determine sentiment by comparing the accu
 - When configuring the Decision Tree Learner, the Gini Index was chosen as the quality measure, showing advantages for faster computation over Gain Ratio as it operates on the categorical target variables in terms of 'success' or 'failure' ([Analytics Steps, 2021](https://medium.com/analytics-steps/understanding-the-gini-index-and-information-gain-in-decision-trees-ab4720518ba8)).  
 - The tree was not pruned, and ‘Reduced Error Pruning” was enabled along with capping the number of records per node at 2, to improve training accuracy while preserving learning efficiency.
 
-A higher Cohen’s kappa value (0.925) for this approach was observed.  This measure solidifies our confidence in this improved model where the target classes (positive and negative sentiments) are balanced within the dataset and high values are expected for strong models ([KNIME, 2020](https://www.knime.com/blog/cohens-kappa-an-overview?pk_vid=ae0debe8dfb2ebfe1764604577aca348); [New Stack, 2022](https://thenewstack.io/cohens-kappa-what-it-is-when-to-use-it-and-how-to-avoid-its-pitfalls/)). 
+A higher Cohen’s kappa value (0.925) for this approach was observed.  This measure solidifies our confidence in this improved model where the target classes (positive and negative sentiments) are balanced within the dataset and high values are expected for strong models ([KNIME, 2020](https://www.knime.com/blog/cohens-kappa-an-overview?pk_vid=ae0debe8dfb2ebfe1764604577aca348); [New Stack, 2022](https://thenewstack.io/cohens-kappa-what-it-is-when-to-use-it-and-how-to-avoid-its-pitfalls/)).
 
+
+## Possible Next Steps
+Leverage GenAI to cluster reviews into similar reaction groups, uncovering opportunities for more nuanced analysis.
 
 ## Tech Stack
 System Specifications:
